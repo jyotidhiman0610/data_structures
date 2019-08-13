@@ -1,3 +1,4 @@
+# For https://practice.geeksforgeeks.org/problems/shortest-path-from-1-to-n/0
 for z in range(0, t):
     n = int(input())
     matrix = [[0 for i in range(0, n)] for j in range(0, n)]
