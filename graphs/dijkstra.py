@@ -1,3 +1,5 @@
+t = int(input())
+
 for z in range(0, t):
     n = int(input())
     matrix = [[0 for i in range(0, n)] for j in range(0, n)]
@@ -30,9 +32,9 @@ for z in range(0, t):
                 min_dis = distances[k]
         visited.append(chosen)
         for j in range(0, n):
+            if (j + 1) in visited:
+                continue
             if (matrix[chosen-1][j] == 1):
                 if (distances[j+1]) > (min_dis + matrix[chosen-1][j]):
                     distances[j+1] = min_dis + matrix[chosen-1][j]
     print(distances[n])
-    
-            
