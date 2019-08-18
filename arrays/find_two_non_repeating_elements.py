@@ -1,4 +1,5 @@
 # https://practice.geeksforgeeks.org/problems/finding-the-numbers/0
+# Also for https://practice.geeksforgeeks.org/problems/two-numbers-with-odd-occurrences/0
 for _ in range(t):
     n = int(input())
     a = [int(i) for i in input().split(' ') if i!='']
